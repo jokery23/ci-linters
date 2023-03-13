@@ -1,8 +1,8 @@
 {
-  "name": "express-typescript-crud",
+  "name": "ci-linters",
   "version": "1.0.0",
-  "description": "Express, Typescript",
-  "main": "dist/index.js",
+  "description": "CI, Prettier, Eslint",
+  "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
     "start": "ts-node-dev --respawn src/main.ts",
@@ -10,14 +10,12 @@
     "lint:fix": "eslint --fix 'src/**/*.ts'",
     "prettier": "prettier --check './src/**/*.ts'",
     "prettier:fix": "prettier --write './src/**/*.ts'",
-    "test": "jest src/*",
     "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/lodash": "^4.14.191",
     "typescript": "^4.5.5"
   },
   "devDependencies": {
@@ -27,9 +25,9 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-typescript-enum": "^2.1.0",
+    "prettier": "^2.5.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.5.1"
+    "lint-staged": "^13.2.0"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
