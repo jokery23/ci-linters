@@ -1,8 +1,8 @@
 console.log('Hello World');
 
 interface AppErrorInterface {
-    field?: string;
     message: string;
+    field?: string;
     field1?: string;
 }
 
@@ -12,4 +12,5 @@ const error: AppErrorInterface = {
     field1: 'field1'
 };
 
+// comment
 console.log(error);
