@@ -12,4 +12,5 @@ const error: AppErrorInterface = {
     field1: 'field1'
 };
 
+// comment new
 console.log(error);
